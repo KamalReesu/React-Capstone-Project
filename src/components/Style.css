@@ -4,99 +4,127 @@
   width: 20%;
   margin: 10px;
   border-radius: 8px;
-  }
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  .container {
-    padding: 2px 16px;
-  }
+}
 
-  .dishes-aligner {
-    display: flex;
-    /* flex-direction: row; */
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    overflow: hidden;
-    flex: auto;
-  }
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
 
-  .specials {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1rem;
-  }
+.container {
+  padding: 2px 16px;
+}
 
-  button.online-menu {
-    padding: 12px 14px;
-    border-radius: 4px;
-    background-color: #f4ce14;
-    color: black;
-    font-weight: 700;
-    border: none;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
-  }
+.dishes-aligner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  overflow: hidden;
+  flex: auto;
+}
 
-  img.cuisine-img{
-    width: 100%;
-    height: 150px;
-    border-radius: 4px;
-  }
+.specials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+}
 
-  .testimonials-container {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 1rem;
-  }
+button.online-menu {
+  padding: 12px 14px;
+  border-radius: 4px;
+  background-color: #f4ce14;
+  color: black;
+  font-weight: 700;
+  border: none;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
 
-  .testimonial {
-    padding: 30px 25px;
-    box-shadow: 0px 0px 4px 1px lightslategray;
-    border-radius: 4px;
-    margin: 1rem;
-  }
+img.cuisine-img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
 
-  .testimonial-header {
-    margin-left: 2rem;
-    text-align: center;
-    font-weight: 500;
-  }
+.testimonials-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 
-  .confirm span{
-    color: blue;
-  }
+.testimonial {
+  padding: 30px 25px;
+  box-shadow: 0px 0px 5px 1px lightslategrey;
+  border-radius: 10px;
+  margin: 1rem;
+}
 
-  .testimonial-author {
-    text-align: end;
-    color: rgb(247, 64, 4);
-    /* font-family: cursive; */
-    font-size: 20px;
-    font-weight: 600;
-  }
+.testimonial-header {
+  margin-left: 2rem;
+  text-align: center;
+  font-weight: 500;
+}
 
-  .testimonial-text {
-    font-weight: 600;
-    font-size: medium;
-  }
+.confirm span {
+  color: blue;
+}
 
-  input, label , select{
-    width: 90%;
-    margin: 15px;
-    font-weight: 600;
-  }
+.testimonial-author {
+  text-align: end;
+  color: rgb(247, 64, 4);
+  font-size: 20px;
+  font-weight: 600;
+}
 
-  .btnReceive {
-    text-align: center;
-  }
+.testimonial-text {
+  font-weight: 600;
+  font-size: medium;
+}
 
-  button:disabled {
-    background-color: lightgrey;
-  }
+input,
+label,
+select {
+  width: 90%;
+  margin: 15px;
+  font-weight: 600;
+}
 
-  .formField{
-    padding: 50px 20px;
-  }
+.btnReceive {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+button:disabled {
+  background-color: lightgrey;
+}
+
+.formField {
+  padding: 50px 20px;
+}
+
+i.fa.fa-star {
+  color: gold;
+  font-size: 20px;
+}
+
+.confirmed-booking {
+  margin-top: 6rem;
+  height: 90%;
+  background-color: #f4ce14;
+  padding: 10px 12px;
+}
+
+#reservation h1 {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+label:after {
+  content: ' *';
+  color: red;
+}
+
+#img-overlay-aligner {
+  width: 30%;
+}

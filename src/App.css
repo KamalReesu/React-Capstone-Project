@@ -29,11 +29,162 @@
   color: white;
 }
 
+/** nav */
+
+/* Add a breakpoint for small screens */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    /* align-self: self-end; */
+    right: 18px;
+    position: absolute;
+  }
+
+  img.menu {
+    width: 80%;
+  }
+
+  div#about {
+    width: 80%;
+  }
+
+  div#highlight-img {
+    margin-bottom: 2rem;
+  }
+
+  div#carousel {
+    height: auto !important;
+  }
+
+  .dishes-aligner {
+    flex-flow: column wrap !important;
+    align-items: center;
+  }
+
+  .img1,
+  .img2 {
+    display: none;
+  }
+
+  div#carousel {
+    flex-direction: row;
+  }
+
+  div#about-section {
+    width: 90% !important;
+  }
+
+  div.about-block {
+    flex-direction: column;
+    align-items: center !important;
+  }
+
+  .card {
+    width: 50% !important;
+  }
+
+  img#header {
+    padding: 10px;
+    width: 25% !important;
+    margin-left: -26% !important;
+    height: -1vh;
+    align-self: flex-start;
+  }
+
+  .nav-links {
+    display: none;
+    /* Hide navigation links */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    /* or any color that matches your theme */
+  }
+
+  .nav-links.visible {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #333;
+    /* or any color that matches your theme */
+  }
+
+  /* Styling changes for the menu icon when it's open */
+  .bar.change:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .bar.change:nth-child(2) {
+    opacity: 0;
+  }
+
+  .bar.change:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  div.one {
+    width: 100%;
+  }
+}
+
+/* For larger screens, adjust as needed */
+@media (min-width: 769px) and (max-width: 1045px) {
+  .menu-icon {
+    display: none;
+    /* Hide menu icon */
+  }
+
+  div#about {
+    width: 55%;
+  }
+
+  div#img-overlay-aligner {
+    width: 0px;
+  }
+
+  div.about-block {
+    justify-content: center !important;
+  }
+
+  div#highlight-img {
+    width: 40%;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  .img1,
+  .img2 {
+    display: none;
+  }
+
+  img.menu {
+    width: 100%;
+  }
+
+  div#carousel {
+    height: auto !important;
+  }
+}
+
+
 header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  background: white;
 }
 
 .App-link {
@@ -44,6 +195,7 @@ header {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -51,14 +203,13 @@ header {
 
 img.menu {
   margin-top: 3rem;
-  border-radius:20px;
+  border-radius: 20px;
 }
 
 
-img#header{
-  /* background-color: black; */
+img#header {
   padding: 10px;
-  width:15%;
+  width: 15%;
   margin-left: -10%;
   height: 20%;
   align-self: flex-start;
@@ -69,9 +220,10 @@ div.about-block {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: stretch;
+  margin-bottom: 2rem;
 }
 
-button#reserve{
+button#reserve {
   background-color: #f4ce14;
   border: none;
   border-radius: 2em;
@@ -85,14 +237,6 @@ button#reserve{
   width: 12em;
 }
 
-ul {
-  /* display: flex;
-  justify-content: space-evenly; */
-}
-
-* {
-  /* background-color: lightgray; */
-}
 
 .one {
   display: flex;
@@ -101,31 +245,32 @@ ul {
 }
 
 ul {
-  list-style-type:none ;
+  list-style-type: none;
 }
 
-.four, .three, .two {
+.four,
+.three,
+.two {
   margin: 7em 1em 1em;
   width: 20%;
 }
 
-#about{
+#about {
   width: 50%;
   text-align: left;
   font-size: 20px;
 }
 
-div#carousel{
+div#carousel {
   display: flex;
   flex-wrap: wrap;
   color: white;
   justify-content: space-evenly;
-  background-color:  #495e57;
+  background-color: #495e57;
   border-radius: 4px;
   height: 400px;
   text-align: center;
-  margin: 1rem;
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 nav ul {
@@ -143,13 +288,11 @@ nav .nav-item {
   padding: 8px 10px;
   font-size: 16px;
   cursor: pointer;
-  /* color: #495e57; */
-  font-weight: 500;
   text-decoration: none;
 }
 
-nav  .nav-item:hover  {
-  border-bottom: 3px solid #495e57 ;
+nav .nav-item:hover {
+  text-decoration: 1px solid underline;
   color: #495e57;
 }
 
@@ -163,7 +306,7 @@ section {
 
 .img1 {
   position: absolute;
-  height: 380px;
+  height: 250px;
   width: 300px;
   margin-top: 3rem;
   margin-left: 150px;
@@ -174,40 +317,42 @@ section {
 
 .img2 {
   background-color: white;
-    width: 300px;
-    position: relative;
-    height: 400px;
-    top: 100px;
-    border-radius: 10px;
+  width: 300px;
+  position: relative;
+  height: 250px;
+  top: 100px;
+  border-radius: 10px;
 }
 
 form {
   /* padding: 20px 10%; */
   background: #495e57;
-  color:white;
+  color: white;
 }
 
-input ,select{
+input,
+select {
   padding: 0.5rem;
   outline: none;
 }
 
 .footer {
   border-top: 3px groove #495e57;
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    justify-content: center;
-    width: 100%;
-    margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: center;
+  width: 100%;
 }
 
 .footer img {
-  width: 90%;
-  margin:auto ;
-  height: 80%;
+  width: 65%;
+  margin: auto;
+  height: 70%;
 }
-#nav, .a {
+
+#nav,
+.a {
   /* color: #000; */
   font-weight: 600;
   list-style: none;
@@ -267,15 +412,15 @@ button {
   transition: .4s;
 }
 
-input:checked + .slider {
-  background-color:white;
+input:checked+.slider {
+  background-color: white;
 }
 
-input + .slider {
+input+.slider {
   box-shadow: 0 0 2px black;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -292,8 +437,7 @@ input:checked + .slider:before {
 }
 
 
-div#about-section
-{
+div#about-section {
   /* text-align: center; */
   width: 50%;
   margin-top: 3rem;
@@ -315,7 +459,7 @@ button[type="submit"] {
 
 .main {
   border-radius: 4px;
-  margin: 1rem;
+  /* margin: 1rem; */
   padding: 10px;
   /* background-image: url(./Images/lemonwithIce.png); */
   border-radius: 4px;
@@ -328,6 +472,5 @@ button[type="submit"] {
 }
 
 .black-text {
-  color:black;
+  color: black;
 }
-

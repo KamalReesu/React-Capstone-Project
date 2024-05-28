@@ -1,8 +1,10 @@
-import { tab } from "@testing-library/user-event/dist/tab";
 import { useState } from "react";
 
 
 function BookingForm(props) {
+
+
+    // { Another way of storing form data /** Please don't consider this */ }
 
     // const handleChange = e => {
     //     const { name, value } = e.target;
@@ -16,6 +18,8 @@ function BookingForm(props) {
     //     //e.preventDefault();
     //     console.log(reserveTable);
     // }
+    // const [reserveTable,setReservationDetails]=useState( { bookingid: 0, bookingdate: "", bookingtime:"",noofguests:0,occasion:"" });
+
 
     const [occasion, setOccasion] = useState("");
     const [guests, setGuests] = useState("");
@@ -34,17 +38,10 @@ function BookingForm(props) {
 
     const handleValidation = (e) => {
         return (
-            occasion && guests.length >= 1 && date && times
+            occasion && guests >= 1 && date && times
         );
     }
 
-    const ErrorMessage = () => { 
-        return ( 
-          <p style={{color:'red'}}>No of guests should be one or more</p> 
-        ); 
-       }; 
-
-    // const [reserveTable,setReservationDetails]=useState( { bookingid: 0, bookingdate: "", bookingtime:"",noofguests:0,occasion:"" });
     return (
         <header>
             <section>
@@ -62,9 +59,9 @@ function BookingForm(props) {
                         <div>
                             <label htmlFor="book-guests">Number of Guests:</label>
                             <input id="book-guests" min="1" value={guests} onChange={(e) => { setGuests(e.target.value) }} type={"number"} placeholder={0} max={10} required></input>
-                            {guests.isTouched && guests.value.length < 1 ? (<ErrorMessage />
-                            ) : null}
+                            <span style={{ marginLeft: 1 + 'rem' }}>{<i>Note: Min Guests should be more 1 or more </i>}</span>
                         </div>
+                        <br />
                         <div>
                             <label htmlFor="book-occasion">Occasion:</label>
                             <select id="book-occasion" key={occasion} value={occasion} onChange={(e) => setOccasion(e.target.value)} required>
