@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/home/static/css/main.19f9d3c4.css",
-    "main.js": "/home/static/js/main.340e6b05.js",
-    "static/js/453.fb6fba81.chunk.js": "/home/static/js/453.fb6fba81.chunk.js",
-    "static/media/headerImage.png": "/home/static/media/headerImage.2c859235d6c57bb54176.png",
-    "static/media/dishes.jpg": "/home/static/media/dishes.a4a913ae3e18e9a0bba2.jpg",
-    "static/media/img2.jpg": "/home/static/media/img2.5951d3e69533163c3fe5.jpg",
-    "static/media/logo.png": "/home/static/media/logo.d4cae6fac8384c2dae04.png",
-    "static/media/img1.jpg": "/home/static/media/img1.9b37bd66aa9ef021cad2.jpg",
-    "static/media/pasta.jpg": "/home/static/media/pasta.7f9b21c8a187819cbecb.jpg",
-    "static/media/taco.jpg": "/home/static/media/taco.e86c66d52724b6c41b35.jpg",
-    "static/media/pizza.jpg": "/home/static/media/pizza.4bd1662f17f49e8022f4.jpg",
-    "index.html": "/home/index.html",
-    "main.19f9d3c4.css.map": "/home/static/css/main.19f9d3c4.css.map",
-    "main.340e6b05.js.map": "/home/static/js/main.340e6b05.js.map",
-    "453.fb6fba81.chunk.js.map": "/home/static/js/453.fb6fba81.chunk.js.map"
+    "main.css": "/React-Capstone-Project/static/css/main.19f9d3c4.css",
+    "main.js": "/React-Capstone-Project/static/js/main.21a43fb6.js",
+    "static/js/453.fb6fba81.chunk.js": "/React-Capstone-Project/static/js/453.fb6fba81.chunk.js",
+    "static/media/headerImage.png": "/React-Capstone-Project/static/media/headerImage.2c859235d6c57bb54176.png",
+    "static/media/dishes.jpg": "/React-Capstone-Project/static/media/dishes.a4a913ae3e18e9a0bba2.jpg",
+    "static/media/img2.jpg": "/React-Capstone-Project/static/media/img2.5951d3e69533163c3fe5.jpg",
+    "static/media/logo.png": "/React-Capstone-Project/static/media/logo.d4cae6fac8384c2dae04.png",
+    "static/media/img1.jpg": "/React-Capstone-Project/static/media/img1.9b37bd66aa9ef021cad2.jpg",
+    "static/media/pasta.jpg": "/React-Capstone-Project/static/media/pasta.7f9b21c8a187819cbecb.jpg",
+    "static/media/taco.jpg": "/React-Capstone-Project/static/media/taco.e86c66d52724b6c41b35.jpg",
+    "static/media/pizza.jpg": "/React-Capstone-Project/static/media/pizza.4bd1662f17f49e8022f4.jpg",
+    "index.html": "/React-Capstone-Project/index.html",
+    "main.19f9d3c4.css.map": "/React-Capstone-Project/static/css/main.19f9d3c4.css.map",
+    "main.21a43fb6.js.map": "/React-Capstone-Project/static/js/main.21a43fb6.js.map",
+    "453.fb6fba81.chunk.js.map": "/React-Capstone-Project/static/js/453.fb6fba81.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.19f9d3c4.css",
-    "static/js/main.340e6b05.js"
+    "static/js/main.21a43fb6.js"
   ]
 }
