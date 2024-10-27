@@ -56,8 +56,8 @@ const Main = () => {
     return(
         <main className="main"  style={{ backgroundColor: theme === "light" ? "white" : "black"}}>
             <Routes>
+                <Route path="/" element={<About />} />
                 <Route path="/home" element={<About /> } />
-                <Route path="/about" element={<About /> } />
                 <Route path="/cuisines" element={<Cuisines />} />
                 <Route path="/booking" element={<Booking availableTimes={state} dispatch={dispatch} submitForm={submitForm}/>} />
                 <Route path="/confirmed" element={<BookingConfirmation/> } />

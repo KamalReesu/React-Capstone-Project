@@ -26,7 +26,7 @@ const Header = () => {
         <nav className={`navbar ${isMenuOpen ? "open" : ""}`}>
           <ul className={`nav-links ${isMenuOpen ? "visible" : ""}`}>
             <Link to="/home" className='nav-item' onClick={ toggleMenu}>HOME</Link>
-            <Link to="/about" className='nav-item' onClick={ toggleMenu}>ABOUT</Link>
+            {/* <Link to="/home" className='nav-item' onClick={ toggleMenu}>ABOUT</Link> */}
             <Link to="/cuisines" className='nav-item' onClick={ toggleMenu}>MENU</Link>
             <Link to="/booking" className='nav-item' onClick={ toggleMenu}>RESERVATIONS</Link>
             <Link to="/cuisines" className='nav-item' onClick={ toggleMenu}>ORDER ONLINE</Link>
